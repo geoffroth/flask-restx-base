@@ -1,0 +1,2 @@
+export FLASK_ENV=testing
+python -m unittest discover -s tests -p 'test_*.py'
