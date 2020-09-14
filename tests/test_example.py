@@ -9,7 +9,7 @@ from server import create_app
 log = logging.getLogger(__name__)
 
 
-class Histogram(unittest.TestCase):
+class Example(unittest.TestCase):
 
     endpoint = '/api/1/example/'
 

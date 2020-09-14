@@ -17,8 +17,6 @@ source .env/bin/activate
 pip install -r requirements.txt
 ```
 
-Last, you need to copy `settings.json` from app.teamsid.com (search: `M2Gen SSO settings.json`) into the server's `./saml` subdirectory.
-
 ## Run
 
 ```bash

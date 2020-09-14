@@ -27,9 +27,9 @@ def create_app(config_name):
     app.wsgi_app = ProxyFix(app.wsgi_app)
 
     api = Api(blueprint,
-              title='Unity / Spot API',
+              title='API',
               version=__version__,
-              description='Unity / Spot API v{}'.format(__version__),
+              description='API v{}'.format(__version__),
               # security='Bearer Auth',
               # headers={'X-server-version': __version__},
               # authorizations=authorizations
@@ -47,7 +47,7 @@ def create_app(config_name):
     with app.app_context():
         api.add_namespace(example_api)
 
-    log.info('********** Unity / Spot API v{} **********'.format(__version__))
+    log.info('********** API v{} **********'.format(__version__))
     # log.info('Using instance config: %s', app.config['INSTANCE'])
     log.info('Using configuration: %s', config_name)
     # log.info('Using data source: %s', app.config.get('DATABASE_URI'))
